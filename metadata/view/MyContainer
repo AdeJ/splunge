@@ -246,6 +246,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "docked": "top",
+                                "ui": "light",
                                 "title": "All",
                                 "designer|userClassName": "MyTitleBar"
                             },
@@ -302,7 +303,7 @@
                         "iconCls": "user"
                     },
                     "customConfigs": [],
-                    "expanded": false,
+                    "expanded": true,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen5684",
@@ -314,6 +315,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "docked": "top",
+                                "ui": "light",
                                 "title": "My Apps",
                                 "designer|userClassName": "MyTitleBar1"
                             },
@@ -331,13 +333,63 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "showAnimation": null,
+                        "scrollable": "vertical",
                         "designer|userClassName": "MyContainer3",
                         "title": "Contact Us",
                         "iconCls": "compose"
                     },
                     "customConfigs": [],
-                    "expanded": false,
+                    "expanded": true,
                     "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen11755",
+                            "type": "fieldset",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "title": "Your Comments",
+                                "designer|userClassName": "MyFieldSet"
+                            },
+                            "customConfigs": [],
+                            "expanded": true,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen11764",
+                                    "type": "textareafield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "label": "Comments",
+                                        "labelWrap": true,
+                                        "designer|userClassName": "MyTextArea"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen11771",
+                                    "type": "textareafield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "label": "New App suggestions",
+                                        "designer|userClassName": "MyTextArea1"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                }
+                            ]
+                        },
                         {
                             "id": "ExtBox1-ext-gen6043",
                             "type": "titlebar",
@@ -348,11 +400,12 @@
                             "codeClass": null,
                             "userConfig": {
                                 "docked": "top",
+                                "ui": "light",
                                 "title": "Contact Us",
                                 "designer|userClassName": "MyTitleBar2"
                             },
                             "customConfigs": [],
-                            "expanded": true,
+                            "expanded": false,
                             "cn": [
                                 {
                                     "id": "ExtBox1-ext-gen6454",
@@ -370,6 +423,42 @@
                                         "text": "",
                                         "designer|userClassName": "MyButton2",
                                         "align": "right"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen18885",
+                            "type": "panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyPanel"
+                            },
+                            "customConfigs": [],
+                            "expanded": true,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen12176",
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "centered": true,
+                                        "ui": "action",
+                                        "width": "50%",
+                                        "iconCls": "arrow_up",
+                                        "iconMask": true,
+                                        "text": "Send comments",
+                                        "designer|userClassName": "MyButton3"
                                     },
                                     "customConfigs": [],
                                     "expanded": true

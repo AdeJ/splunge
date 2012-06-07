@@ -124,6 +124,7 @@ Ext.define('MyApp.view.MyContainer', {
                             {
                                 xtype: 'titlebar',
                                 docked: 'top',
+                                ui: 'light',
                                 title: 'All'
                             },
                             {
@@ -146,18 +147,36 @@ Ext.define('MyApp.view.MyContainer', {
                             {
                                 xtype: 'titlebar',
                                 docked: 'top',
+                                ui: 'light',
                                 title: 'My Apps'
                             }
                         ]
                     },
                     {
                         xtype: 'container',
+                        scrollable: 'vertical',
                         title: 'Contact Us',
                         iconCls: 'compose',
                         items: [
                             {
+                                xtype: 'fieldset',
+                                title: 'Your Comments',
+                                items: [
+                                    {
+                                        xtype: 'textareafield',
+                                        label: 'Comments',
+                                        labelWrap: true
+                                    },
+                                    {
+                                        xtype: 'textareafield',
+                                        label: 'New App suggestions'
+                                    }
+                                ]
+                            },
+                            {
                                 xtype: 'titlebar',
                                 docked: 'top',
+                                ui: 'light',
                                 title: 'Contact Us',
                                 items: [
                                     {
@@ -167,6 +186,20 @@ Ext.define('MyApp.view.MyContainer', {
                                         iconMask: true,
                                         text: '',
                                         align: 'right'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'panel',
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        centered: true,
+                                        ui: 'action',
+                                        width: '50%',
+                                        iconCls: 'arrow_up',
+                                        iconMask: true,
+                                        text: 'Send comments'
                                     }
                                 ]
                             }
