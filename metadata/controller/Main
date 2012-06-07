@@ -1,0 +1,214 @@
+{
+    "id": "ExtBox1-ext-gen12380",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main"
+    },
+    "customConfigs": [],
+    "designerId": "ee154a4e-c7ea-4b88-9402-fb7f00a67769",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen17935",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onHomeToggleButtonsToggle",
+                "implHandler": [
+                    "switch(button.getId()){\r",
+                    "    case 'whatsHotButton':\r",
+                    "    this.getHomeSwitcher().setActiveItem(0);        \r",
+                    "    break;\r",
+                    "    case 'tweetsButton':\r",
+                    "    this.getHomeSwitcher().setActiveItem(1);\r",
+                    "    break;\r",
+                    "}"
+                ],
+                "name": "toggle",
+                "designer|targetType": "Ext.SegmentedButton",
+                "designer|controlQuery": "#homeToggleButtons",
+                "designer|userClassName": "onHomeToggleButtonsToggle"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen18586",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "homeToggleButtons",
+                "selector": "#homeToggleButtons",
+                "designer|userClassName": "homeToggleButtons"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen20966",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "homeSwitcher",
+                "selector": "#homeSwitcher",
+                "designer|userClassName": "homeSwitcher"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen3723",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "newsCarousel",
+                "selector": "#newsCarousel",
+                "xtype": "carousel",
+                "designer|userClassName": "newsCarousel"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen4384",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNewsCarouselInitialize",
+                "implHandler": [
+                    "var sheets = [];\r",
+                    "sheets.push({xtype:'component', html:'<img src=\"http://news.bbcimg.co.uk/media/images/60625000/jpg/_60625563_metro.jpg\" style=\"float:left;padding-right:10px\"></img><h1>Microsoft previews Windows 8 operating system</h1>Microsoft has launched the most complete preview yet of its forthcoming Windows 8 operating system.<p/>The company said that tens of thousands of improvements have been made to what it calls the most important redesign of its interface since Windows 95.'});\r",
+                    "sheets.push({xtype:'component', html:'<img src=\"http://news.bbcimg.co.uk/media/images/60642000/jpg/_60642845_014909605-1.jpg\" style=\"float:left;padding-right:10px\"></img><h1>Jubilee event rehearsals begin</h1>A full dress rehearsal of a procession between Westminster Hall and Buckingham Palace has taken place ahead of the weekends Diamond Jubilee celebrations.<p/>Roads in central London were closed off for the rehearsal of Tuesdays carriage procession, which ended at 06:00 BST.<p/>The captains and crew of more than 1,000 boats that will sail along the River Thames in a flotilla on Sunday are also being briefed.'});\r",
+                    "sheets.push({xtype:'component', html:'<img src=\"http://news.bbcimg.co.uk/media/images/60565000/jpg/_60565233_012622076-1.jpg\" style=\"float:left;padding-right:10px\"></img><h1>Sir Terry Pratchett wins Wodehouse comic fiction award</h1>British author Sir Terry Pratchett is to have a pig named in his honour after winning the 13th Bollinger Everyman Wodehouse Prize for Comic Fiction.<p/>He won for his 50th book Snuff, which has become one of the fastest-selling hardback novels since records began.'});\r",
+                    "component.setItems(sheets);\r",
+                    "component.setActiveItem(0);"
+                ],
+                "name": "initialize",
+                "designer|targetType": "Ext.carousel.Carousel",
+                "designer|controlQuery": "#newsCarousel",
+                "designer|userClassName": "onNewsCarouselInitialize"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen2880",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "featuredAppsContainer",
+                "selector": "#featuredAppsContainer",
+                "xtype": "container",
+                "designer|userClassName": "featuredAppsContainer"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen3502",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFeaturedAppsContainerInitialize",
+                "implHandler": [
+                    "if(Ext.os.is.Tablet){\r",
+                    "    var numberOfApps = 20;\r",
+                    "    var appsPerRow = 3;\r",
+                    "    var rowsPerSheet = 2;\r",
+                    "    var appsPerSheet = appsPerRow * rowsPerSheet;\r",
+                    "    var rowCounter = 2;\r",
+                    "\r",
+                    "    var apps = [];\r",
+                    "    var rows = [];\r",
+                    "    var sheets = [];\r",
+                    "\r",
+                    "    var sheet = Ext.create('Ext.Container',{layout:{type:'vbox',align:'fit'}});\r",
+                    "    var row = Ext.create('Ext.Container',{layout:{type:'hbox'},cls:'bat_appstore_container',flex:1});\r",
+                    "\r",
+                    "    //before we start we should round up the number of apps to the nearest whole number per sheet\r",
+                    "    if(numberOfApps % appsPerSheet !== 0){\r",
+                    "        numberOfApps = numberOfApps + (appsPerSheet - (numberOfApps % appsPerSheet));\r",
+                    "    }\r",
+                    "\r",
+                    "    //loop through all the apps and build the grid\r",
+                    "    for (i = 1; i <= numberOfApps; i++)\r",
+                    "    {       \r",
+                    "\r",
+                    "        //handle the apps\r",
+                    "        if(rowCounter % 2 === 0){\r",
+                    "            var app = Ext.create('Ext.Container',{html:'<div class=\\\"bat_appstore_app_icon\\\"><img src=\\\"ico_inews_72.png\\\"></div><div class=\\\"bat_appstore_app_detail\\\"><div class=\\\"bat_appstore_app_detail_title\\\"><a href=\\\"http://meap/interact/adrian/mobilecontrolsdojo16.nsf/xp_v_inews3.xsp?action=openDocument\\\">Interact News</a></div><div class=\\\"bat_appstore_app_detail_function\\\">Marketing<br/>Released 15th February 2012</div></div>',cls:'bat_appstore_app_top',flex:1});\r",
+                    "        }else{\r",
+                    "            var app = Ext.create('Ext.Container',{html:'<div class=\\\"bat_appstore_app_icon\\\"><img src=\\\"ico_inews_72.png\\\"></div><div class=\\\"bat_appstore_app_detail\\\"><div class=\\\"bat_appstore_app_detail_title\\\"><a href=\\\"http://meap/interact/adrian/mobilecontrolsdojo16.nsf/xp_v_inews3.xsp?action=openDocument\\\">Interact News</a></div><div class=\\\"bat_appstore_app_detail_function\\\">Marketing<br/>Released 15th February 2012</div></div>',cls:'bat_appstore_app_bottom',flex:1});\r",
+                    "        }\r",
+                    "        apps.push(app);\r",
+                    "\r",
+                    "        //handle the rows\r",
+                    "        if(i % appsPerRow === 0){\r",
+                    "            row.setItems(apps);\r",
+                    "            apps = [];\r",
+                    "            rows.push(row);\r",
+                    "            var row = Ext.create('Ext.Container',{layout:{type:'hbox'},cls:'bat_appstore_container',flex:1});\r",
+                    "            rowCounter = rowCounter + 1;\r",
+                    "        }\r",
+                    "\r",
+                    "        //handle the sheets\r",
+                    "        if(i % appsPerSheet === 0){         \r",
+                    "            sheet.setItems(rows);\r",
+                    "            rows = [];\r",
+                    "            sheets.push(sheet);\r",
+                    "            var sheet = Ext.create('Ext.Container',{layout:{type:'vbox',align:'fit'}});\r",
+                    "        }  \r",
+                    "    }\r",
+                    "    //create carousel\r",
+                    "    var carousel = Ext.create('Ext.Carousel',{styleHtmlContent:true});\r",
+                    "    carousel.setItems(sheets);\r",
+                    "    component.setItems(carousel);\r",
+                    "\r",
+                    "}else{\r",
+                    "    component.setHtml(\"phone detected\");                  \r",
+                    "}"
+                ],
+                "name": "initialize",
+                "designer|targetType": "Ext.Container",
+                "designer|controlQuery": "#featuredAppsContainer",
+                "designer|userClassName": "onFeaturedAppsContainerInitialize"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}
