@@ -7,6 +7,12 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "appSummary"
+        ],
+        "stores": [
+            "appsByAlpha"
+        ],
         "views": [
             "MyContainer"
         ],

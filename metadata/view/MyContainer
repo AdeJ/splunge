@@ -45,7 +45,7 @@
                         "iconCls": "star"
                     },
                     "customConfigs": [],
-                    "expanded": true,
+                    "expanded": false,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen4659",
@@ -58,11 +58,12 @@
                             "userConfig": {
                                 "docked": "top",
                                 "itemId": "homeToolbar",
+                                "ui": "light",
                                 "designer|userClassName": "MyToolbar",
                                 "container|pack": "center"
                             },
                             "customConfigs": [],
-                            "expanded": true,
+                            "expanded": false,
                             "cn": [
                                 {
                                     "id": "ExtBox1-ext-gen4893",
@@ -75,6 +76,7 @@
                                     "userConfig": {
                                         "id": "homeToggleButtons",
                                         "itemId": "",
+                                        "ui": "light",
                                         "designer|userClassName": "MySegmentedButton"
                                     },
                                     "customConfigs": [],
@@ -91,6 +93,7 @@
                                             "userConfig": {
                                                 "id": "whatsHotButton",
                                                 "itemId": null,
+                                                "ui": "action",
                                                 "text": "What's Hot",
                                                 "designer|userClassName": "MyButton",
                                                 "pressed": true
@@ -108,6 +111,7 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "id": "tweetsButton",
+                                                "ui": "action",
                                                 "text": "BAT Tweets",
                                                 "designer|userClassName": "MyButton1"
                                             },
@@ -133,7 +137,7 @@
                                 "designer|userClassName": "MyContainer4"
                             },
                             "customConfigs": [],
-                            "expanded": true,
+                            "expanded": false,
                             "cn": [
                                 {
                                     "id": "ExtBox1-ext-gen19589",
@@ -224,12 +228,65 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout": "card",
                         "designer|userClassName": "MyContainer2",
                         "title": "All Apps",
-                        "iconCls": "batleaf"
+                        "iconCls": "download"
                     },
                     "customConfigs": [],
-                    "expanded": true
+                    "expanded": true,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen5279",
+                            "type": "titlebar",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "top",
+                                "title": "All",
+                                "designer|userClassName": "MyTitleBar"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen7493",
+                            "type": "list",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "styleHtmlContent": true,
+                                "itemTpl": "<div><div class=\"bat_appstore_app_icon\"><img src=\"{AppIcon}\"></div><h2>{Title}</h2><p>{Description}<br/>{Link}</p></div>",
+                                "store": "appsByAlpha",
+                                "grouped": true,
+                                "designer|userClassName": "MyList"
+                            },
+                            "customConfigs": [],
+                            "expanded": true,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen10859",
+                                    "type": "listindexbar",
+                                    "reference": {
+                                        "name": "indexBar",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyIndexBar"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "ExtBox1-ext-gen2472",
@@ -245,7 +302,25 @@
                         "iconCls": "user"
                     },
                     "customConfigs": [],
-                    "expanded": true
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen5684",
+                            "type": "titlebar",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "top",
+                                "title": "My Apps",
+                                "designer|userClassName": "MyTitleBar1"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        }
+                    ]
                 },
                 {
                     "id": "ExtBox1-ext-gen2945",
@@ -258,10 +333,50 @@
                     "userConfig": {
                         "designer|userClassName": "MyContainer3",
                         "title": "Contact Us",
-                        "iconCls": "arrow_up"
+                        "iconCls": "compose"
                     },
                     "customConfigs": [],
-                    "expanded": true
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen6043",
+                            "type": "titlebar",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": "top",
+                                "title": "Contact Us",
+                                "designer|userClassName": "MyTitleBar2"
+                            },
+                            "customConfigs": [],
+                            "expanded": true,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen6454",
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "ui": "action",
+                                        "iconAlign": null,
+                                        "iconCls": "more",
+                                        "iconMask": true,
+                                        "text": "",
+                                        "designer|userClassName": "MyButton2",
+                                        "align": "right"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": "ExtBox1-ext-gen3182",
@@ -273,6 +388,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "docked": "bottom",
+                        "ui": "light",
                         "designer|userClassName": "MyTabBar"
                     },
                     "customConfigs": [],
@@ -280,22 +396,6 @@
                     "expanded": true
                 }
             ]
-        },
-        {
-            "id": "ExtBox1-ext-gen4344",
-            "type": "titlebar",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "docked": "top",
-                "title": "BAT App Store",
-                "designer|userClassName": "MyTitleBar"
-            },
-            "customConfigs": [],
-            "expanded": true
         }
     ]
 }

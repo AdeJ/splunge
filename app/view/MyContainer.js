@@ -36,6 +36,7 @@ Ext.define('MyApp.view.MyContainer', {
                                 xtype: 'toolbar',
                                 docked: 'top',
                                 itemId: 'homeToolbar',
+                                ui: 'light',
                                 layout: {
                                     pack: 'center',
                                     type: 'hbox'
@@ -45,16 +46,19 @@ Ext.define('MyApp.view.MyContainer', {
                                         xtype: 'segmentedbutton',
                                         id: 'homeToggleButtons',
                                         itemId: '',
+                                        ui: 'light',
                                         items: [
                                             {
                                                 xtype: 'button',
                                                 id: 'whatsHotButton',
+                                                ui: 'action',
                                                 text: 'What\'s Hot',
                                                 pressed: true
                                             },
                                             {
                                                 xtype: 'button',
                                                 id: 'tweetsButton',
+                                                ui: 'action',
                                                 text: 'BAT Tweets'
                                             }
                                         ]
@@ -111,28 +115,68 @@ Ext.define('MyApp.view.MyContainer', {
                     },
                     {
                         xtype: 'container',
+                        layout: {
+                            type: 'card'
+                        },
                         title: 'All Apps',
-                        iconCls: 'batleaf'
+                        iconCls: 'download',
+                        items: [
+                            {
+                                xtype: 'titlebar',
+                                docked: 'top',
+                                title: 'All'
+                            },
+                            {
+                                xtype: 'list',
+                                styleHtmlContent: true,
+                                itemTpl: [
+                                    '<div><div class="bat_appstore_app_icon"><img src="{AppIcon}"></div><h2>{Title}</h2><p>{Description}<br/>{Link}</p></div>'
+                                ],
+                                store: 'appsByAlpha',
+                                grouped: true,
+                                indexBar: true
+                            }
+                        ]
                     },
                     {
                         xtype: 'container',
                         title: 'My Apps',
-                        iconCls: 'user'
+                        iconCls: 'user',
+                        items: [
+                            {
+                                xtype: 'titlebar',
+                                docked: 'top',
+                                title: 'My Apps'
+                            }
+                        ]
                     },
                     {
                         xtype: 'container',
                         title: 'Contact Us',
-                        iconCls: 'arrow_up'
+                        iconCls: 'compose',
+                        items: [
+                            {
+                                xtype: 'titlebar',
+                                docked: 'top',
+                                title: 'Contact Us',
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        ui: 'action',
+                                        iconCls: 'more',
+                                        iconMask: true,
+                                        text: '',
+                                        align: 'right'
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 tabBar: {
-                    docked: 'bottom'
+                    docked: 'bottom',
+                    ui: 'light'
                 }
-            },
-            {
-                xtype: 'titlebar',
-                docked: 'top',
-                title: 'BAT App Store'
             }
         ]
     }

@@ -1,7 +1,7 @@
 {
     "name": "AppStore",
     "settings": {
-        "urlPrefix": "",
+        "urlPrefix": "http://192.168.0.7/touch/splunge",
         "spacesToIndent": 4,
         "codeGenFormat": "Class",
         "exportPath": "C:/Documents and Settings/User/Desktop",
@@ -34,6 +34,34 @@
                 "app/controller/Main.js"
             ],
             "className": "Main"
+        },
+        "93447b2c-bf46-4990-8464-22d1aa8cf2ae": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "55a388c9-97b0-47c6-b7a9-de96cdb17ee1": {
+            "paths": [
+                "metadata/resource/css1"
+            ],
+            "className": "css1"
+        },
+        "13a1e3cc-323c-4608-8c05-8f9cdb937d12": {
+            "paths": [
+                "metadata/store/appsByAlpha",
+                "app/store/override/appsByAlpha.js",
+                "app/store/appsByAlpha.js"
+            ],
+            "className": "appsByAlpha"
+        },
+        "b0d3e520-d5c7-4c73-b1ea-2da743d61a6c": {
+            "paths": [
+                "metadata/model/appSummary",
+                "app/model/override/appSummary.js",
+                "app/model/appSummary.js"
+            ],
+            "className": "appSummary"
         }
     },
     "expandedState": {

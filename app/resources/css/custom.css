@@ -1,0 +1,89 @@
+            /* TABLET APPSTORE CAROUSEL ITEMS MIMICS THE APPSTORE WAY */
+
+            .bat_appstore_container{
+            	width:100%;
+            	height:210px;
+            	border:1px solid #505153;
+            }
+            
+            .bat_appstore_app_top{
+            	width:340px;
+            	height:104px;
+            	background-color:#aeaeaf;
+            	border-top:1px solid #929292;
+            	border-bottom:1px solid #8b8c8c;
+            	border-left:1px solid #c6c7c7;
+            	border-right:1px solid #8b8c8c;
+            	float:left;
+            }
+            
+            .bat_appstore_app_bottom{
+            	width:340px;
+            	height:104px;
+            	background-color:#bbbbbc;
+            	border-top:1px solid #c6c7c7;
+            	border-bottom:1px solid #929292;
+            	border-left:1px solid #c6c7c7;
+            	border-right:1px solid #8b8c8c;
+            	float:left;
+            }
+            
+            
+            .bat_appstore_app_bottom .bat_appstore_app_icon{
+          		background-image: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.62, rgb(119,201,212)),
+					color-stop(0.44, rgb(71,148,207)),
+					color-stop(0.88, rgb(250,250,250))
+				);
+            }
+            
+            .bat_appstore_app_icon{
+            	margin:15px;
+            	height:72px;
+            	width:72px;
+            	float:left;
+            	border:1px solid #929292;
+            	-webkit-border-radius: 15px;
+   		    	background-image: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.62, rgb(212,196,119)),
+					color-stop(0.44, rgb(209,190,69)),
+					color-stop(0.88, rgb(250,250,250))
+				);
+            }
+            
+            .bat_appstore_app_detail{
+        		margin-top:15px;
+            	width:235px;
+            	height:80px;
+            	float:left;
+            }
+            
+            .bat_appstore_app_detail_title{
+            	font-size:14pt;
+            	color:#111;
+            }
+            
+            .bat_appstore_app_detail_function{
+            	color:#666;
+            	font-size:10pt;
+            	font-weight:bold;
+            }
+
+		/* APPS LIST */
+		
+.bat_applist_entry{width:100%;}
+.bat_applist_image{width:100px;}
+.bat_applist_detail{}
+
+
+.bat_news_entry h2{font-weight:bold; padding-left:10px;padding-bottom:3px;}
+.bat_news_entry img{border-radius: 5px;width:120px; float:left}
+.bat_news_entry .news{margin-left:130px;min-height:50px}
+.bat_news_entry .posted{float:right}
+	
