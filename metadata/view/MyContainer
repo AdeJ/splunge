@@ -14,7 +14,7 @@
     "customConfigs": [],
     "designerId": "228adb8b-e080-43bc-89f9-d58213f116f9",
     "$viewOrder": 0,
-    "expanded": true,
+    "expanded": false,
     "cn": [
         {
             "id": "ExtBox1-ext-gen2444",
@@ -28,7 +28,7 @@
                 "designer|userClassName": "MyTabPanel"
             },
             "customConfigs": [],
-            "expanded": true,
+            "expanded": false,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen2456",
@@ -234,7 +234,7 @@
                         "iconCls": "download"
                     },
                     "customConfigs": [],
-                    "expanded": true,
+                    "expanded": false,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen5279",
@@ -340,7 +340,7 @@
                         "iconCls": "compose"
                     },
                     "customConfigs": [],
-                    "expanded": true,
+                    "expanded": false,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen11755",

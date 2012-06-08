@@ -65,10 +65,10 @@
         }
     },
     "expandedState": {
-        "data": true,
-        "model": true,
-        "component": true,
+        "data": false,
+        "model": false,
+        "component": false,
         "controller": true,
-        "resource": true
+        "resource": false
     }
 }

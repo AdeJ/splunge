@@ -104,7 +104,7 @@ Ext.define('MyApp.controller.Main', {
                 }
 
                 //handle the sheets
-                if(i % appsPerSheet === 0){         
+                if(i % appsPerSheet === 0){
                     sheet.setItems(rows);
                     rows = [];
                     sheets.push(sheet);
@@ -112,13 +112,24 @@ Ext.define('MyApp.controller.Main', {
                 }  
             }
             //create carousel
-            var carousel = Ext.create('Ext.Carousel',{styleHtmlContent:true});
-            carousel.setItems(sheets);
-            component.setItems(carousel);
+            //add a delegated event listener
+            //the listner is bound to the html element and listens for the tap event, the delegate option defines which element should have the listener bound to it
+            //can't determine which app is tapped using this method, will have to turn each app into a button or something that has a tap event
+            var carousel = Ext.create('Ext.Carousel',{
+                styleHtmlContent:true,
+                listeners:{
+                    element:'element',
+                    tap:function(){console.log('you have tapped an app');},
+                    delegate:'.bat_appstore_app_top, .bat_appstore_app_bottom'
+                }}
 
-        }else{
-            component.setHtml("phone detected");                  
-        }
+                );
+                carousel.setItems(sheets);
+                component.setItems(carousel);
+
+            }else{
+                component.setHtml("phone detected");                  
+            }
     }
 
 });
