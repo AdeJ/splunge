@@ -1,0 +1,51 @@
+{
+    "id": "ExtBox1-ext-gen29767",
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "appSummary",
+        "storeId": "appsByInstall",
+        "designer|userClassName": "appsByInstall"
+    },
+    "customConfigs": [],
+    "designerId": "ef0566c7-1d0f-40fd-8a3c-965d1996bf96",
+    "$viewOrder": 3,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen29774",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "app/data/vwMobAppsByInstall.json",
+                "designer|userClassName": "MyAjaxProxy3"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen29781",
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader3"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

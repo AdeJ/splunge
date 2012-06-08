@@ -40,6 +40,7 @@
       ],
       "nRating":0,
       "Audience":"",
+      "IconBgClass":"icon_yellow",
       "nInstalls":0
   },
   {
@@ -70,6 +71,7 @@
       ],
       "nRating":0,
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":0
   },
   {
@@ -116,6 +118,7 @@
       "Audience":
       ["Investors","Public"
       ],
+      "IconBgClass":"",
       "nInstalls":0
   },
   {
@@ -148,6 +151,7 @@
       ],
       "nRating":4,
       "Audience":"",
+      "IconBgClass":"icon_blue",
       "nInstalls":12
   },
   {
@@ -190,6 +194,7 @@
       ],
       "nRating":1,
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":1
   },
   {
@@ -220,6 +225,7 @@
       ],
       "nRating":0,
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":17
   },
   {
@@ -250,6 +256,7 @@
       ],
       "nRating":0,
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":222
   }
 ]

@@ -18,18 +18,60 @@ Ext.define('MyApp.model.appSummary', {
     config: {
         fields: [
             {
-                name: 'Title'
+                name: 'Title',
+                type: 'string'
             },
             {
-                name: 'Description'
+                name: 'Description',
+                type: 'string'
             },
             {
                 mapping: '@href',
-                name: 'Link'
+                name: 'Link',
+                type: 'string'
             },
             {
-                mapping: '$13',
-                name: 'AppIcon'
+                mapping: 'IconURL',
+                name: 'IconURL',
+                type: 'string'
+            },
+            {
+                mapping: 'nInstalls',
+                name: 'Installs',
+                type: 'float'
+            },
+            {
+                mapping: 'Function',
+                name: 'Function',
+                type: 'string'
+            },
+            {
+                mapping: 'ID',
+                name: 'ID',
+                type: 'string'
+            },
+            {
+                mapping: 'nRating',
+                name: 'Rating',
+                type: 'float'
+            },
+            {
+                mapping: 'Tags',
+                name: 'Tags',
+                type: 'string'
+            },
+            {
+                mapping: 'EnableMessage',
+                name: 'EnableMessage',
+                type: 'boolean'
+            },
+            {
+                mapping: 'Message',
+                name: 'Message',
+                type: 'string'
+            },
+            {
+                name: 'IconBgClass'
             }
         ]
     }

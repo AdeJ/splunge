@@ -8,7 +8,7 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": true,
-        "groupField": "Title",
+        "groupField": null,
         "model": "appSummary",
         "storeId": "appsByAlpha",
         "designer|userClassName": "appsByAlpha"
@@ -16,7 +16,7 @@
     "customConfigs": [],
     "designerId": "13a1e3cc-323c-4608-8c05-8f9cdb937d12",
     "$viewOrder": 0,
-    "expanded": true,
+    "expanded": false,
     "cn": [
         {
             "id": "ExtBox1-ext-gen7683",
@@ -27,7 +27,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "app/data/vMobAppsByAlpha.json",
+                "url": "app/data/vwMobAppsByAlpha.json",
                 "designer|userClassName": "MyAjaxProxy"
             },
             "customConfigs": [],
@@ -45,6 +45,44 @@
                         "designer|userClassName": "MyJsonReader"
                     },
                     "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen25206",
+            "type": "grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGrouper"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen25337",
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "record"
+                        ],
+                        "implHandler": [
+                            "return record.get('Title')[0];"
+                        ],
+                        "designer|userClassName": "groupFn"
+                    },
+                    "customConfigs": [],
+                    "iconCls": "icon-basic-function",
                     "expanded": true
                 }
             ]

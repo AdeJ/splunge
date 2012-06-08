@@ -19,10 +19,15 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'appSummary'
+        'appSummary',
+        'newsSummary'
     ],
     stores: [
-        'appsByAlpha'
+        'appsByAlpha',
+        'appsByTag',
+        'appsByRating',
+        'appsByInstall',
+        'newsByDate'
     ],
     views: [
         'MyContainer'

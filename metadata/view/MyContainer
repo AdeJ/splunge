@@ -63,7 +63,7 @@
                                 "container|pack": "center"
                             },
                             "customConfigs": [],
-                            "expanded": false,
+                            "expanded": true,
                             "cn": [
                                 {
                                     "id": "ExtBox1-ext-gen4893",
@@ -116,6 +116,51 @@
                                                 "designer|userClassName": "MyButton1"
                                             },
                                             "customConfigs": [],
+                                            "expanded": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen21636",
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "docked": "left",
+                                        "id": "homeButton",
+                                        "ui": "action-round",
+                                        "iconCls": "batleaf",
+                                        "iconMask": true,
+                                        "text": null,
+                                        "designer|userClassName": "MyButton4"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen23063",
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "handler",
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "implHandler": [
+                                                    "Ext.Msg.alert('BAT Appstore','This will return you to the main Appstore menu');"
+                                                ],
+                                                "designer|userClassName": "handler"
+                                            },
+                                            "customConfigs": [],
+                                            "iconCls": "icon-basic-function",
                                             "expanded": true
                                         }
                                     ]
@@ -251,7 +296,54 @@
                                 "designer|userClassName": "MyTitleBar"
                             },
                             "customConfigs": [],
-                            "expanded": true
+                            "expanded": true,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen6454",
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "ui": "action",
+                                        "iconAlign": null,
+                                        "iconCls": "more",
+                                        "iconMask": true,
+                                        "text": "",
+                                        "designer|userClassName": "MyButton2",
+                                        "align": "right"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": false,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen25882",
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "handler",
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "implHandler": [
+                                                    "Ext.Msg.alert('Other menu options','The action sheet for choosing All apps... By Function.. By Tag etc.. will go here');"
+                                                ],
+                                                "designer|userClassName": "handler"
+                                            },
+                                            "customConfigs": [],
+                                            "iconCls": "icon-basic-function",
+                                            "expanded": true
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "id": "ExtBox1-ext-gen7493",
@@ -262,8 +354,9 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "id": "AppsList",
                                 "styleHtmlContent": true,
-                                "itemTpl": "<div><div class=\"bat_appstore_app_icon\"><img src=\"{AppIcon}\"></div><h2>{Title}</h2><p>{Description}<br/>{Link}</p></div>",
+                                "itemTpl": "<div><div class=\"bat_appstore_app_icon {IconBgClass}\"><img src=\"{IconURL}\"></div><h2>{Title}</h2><p>{Description}<br/>{ID}<br/>{Link}</p></div>",
                                 "store": "appsByAlpha",
                                 "grouped": true,
                                 "designer|userClassName": "MyList"
@@ -303,7 +396,7 @@
                         "iconCls": "user"
                     },
                     "customConfigs": [],
-                    "expanded": true,
+                    "expanded": false,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen5684",
@@ -355,7 +448,7 @@
                                 "designer|userClassName": "MyFieldSet"
                             },
                             "customConfigs": [],
-                            "expanded": true,
+                            "expanded": false,
                             "cn": [
                                 {
                                     "id": "ExtBox1-ext-gen11764",
@@ -405,29 +498,7 @@
                                 "designer|userClassName": "MyTitleBar2"
                             },
                             "customConfigs": [],
-                            "expanded": false,
-                            "cn": [
-                                {
-                                    "id": "ExtBox1-ext-gen6454",
-                                    "type": "button",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "ui": "action",
-                                        "iconAlign": null,
-                                        "iconCls": "more",
-                                        "iconMask": true,
-                                        "text": "",
-                                        "designer|userClassName": "MyButton2",
-                                        "align": "right"
-                                    },
-                                    "customConfigs": [],
-                                    "expanded": true
-                                }
-                            ]
+                            "expanded": true
                         },
                         {
                             "id": "ExtBox1-ext-gen18885",
@@ -455,7 +526,8 @@
                                         "centered": true,
                                         "ui": "action",
                                         "width": "50%",
-                                        "iconCls": "arrow_up",
+                                        "iconAlign": null,
+                                        "iconCls": null,
                                         "iconMask": true,
                                         "text": "Send comments",
                                         "designer|userClassName": "MyButton3"
@@ -483,6 +555,41 @@
                     "customConfigs": [],
                     "iconCls": "icon-tab-bar",
                     "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen35227",
+                    "type": "container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "card",
+                        "designer|userClassName": "MyContainer9",
+                        "title": "Temp News",
+                        "iconCls": "info"
+                    },
+                    "customConfigs": [],
+                    "expanded": true,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen35704",
+                            "type": "list",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemTpl": "<div><img src=\"{MainImagePath}\">{Headline}<br/>{Category} - {Date}<br/>{Introduction}</div>",
+                                "store": "newsByDate",
+                                "designer|userClassName": "MyList1"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        }
+                    ]
                 }
             ]
         }

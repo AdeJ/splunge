@@ -27,7 +27,8 @@
       ],
       "nRating":1,
       "nInstalls":1,
-      "Audience":""
+      "Audience":"",
+      "IconBgClass":""
   },
   {
       "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/collections\/name\/vwMobAppsByAlpha\/unid\/356C1956E2494A05802579F2005C9E45",
@@ -56,7 +57,8 @@
       ],
       "nRating":0,
       "nInstalls":17,
-      "Audience":""
+      "Audience":"",
+      "IconBgClass":""
   },
   {
       "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/collections\/name\/vwMobAppsByAlpha\/unid\/91904D8563C2F049802579FF005675E0",
@@ -85,7 +87,8 @@
       ],
       "nRating":0,
       "nInstalls":5,
-      "Audience":""
+      "Audience":"",
+      "IconBgClass":"icon_new"
   },
   {
       "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/collections\/name\/vwMobAppsByAlpha\/unid\/69CAB2BADAA584BC802579F2005CDCE5",
@@ -98,6 +101,7 @@
       "@unid":"69CAB2BADAA584BC802579F2005CDCE5",
       "@noteid":"8FE",
       "@position":"4",
+      "@read":true,
       "@siblings":13,
       "@form":"frmAppInfo",
       "Title":"CKB",
@@ -114,7 +118,8 @@
       ],
       "nRating":2.7,
       "nInstalls":2,
-      "Audience":""
+      "Audience":"",
+      "IconBgClass":""
   },
   {
       "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/collections\/name\/vwMobAppsByAlpha\/unid\/90C8F4B16FD191BF80257A17003EBC02",
@@ -143,7 +148,8 @@
       ],
       "nRating":0,
       "nInstalls":0,
-      "Audience":""
+      "Audience":"",
+      "IconBgClass":"icon_yellow"
   },
   {
       "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/collections\/name\/vwMobAppsByAlpha\/unid\/13A94F0A3A8DC7B3802579F2005CE812",
@@ -172,7 +178,8 @@
       ],
       "nRating":4.6,
       "nInstalls":397,
-      "Audience":""
+      "Audience":"",
+      "IconBgClass":"icon_blue"
   },
   {
       "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/collections\/name\/vwMobAppsByAlpha\/unid\/BA30D1C1D23124F080257A17003E7B9B",
@@ -205,7 +212,8 @@
       "nInstalls":0,
       "Audience":
       ["Investors","Public"
-      ]
+      ],
+      "IconBgClass":""
   },
   {
       "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/collections\/name\/vwMobAppsByAlpha\/unid\/DF5892082764481B802579FF00566E80",
@@ -236,7 +244,8 @@
       ],
       "nRating":4,
       "nInstalls":12,
-      "Audience":""
+      "Audience":"",
+      "IconBgClass":"icon_blue"
   },
   {
       "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/collections\/name\/vwMobAppsByAlpha\/unid\/9330C5E8BA495E9D80257A17003EAE4C",
@@ -265,7 +274,8 @@
       ],
       "nRating":0,
       "nInstalls":0,
-      "Audience":""
+      "Audience":"",
+      "IconBgClass":""
   },
   {
       "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/collections\/name\/vwMobAppsByAlpha\/unid\/D034BE7361C41FE180257A0E005E90A7",
@@ -294,6 +304,7 @@
       ],
       "nRating":5,
       "nInstalls":2,
-      "Audience":""
+      "Audience":"",
+      "IconBgClass":""
   }
 ]

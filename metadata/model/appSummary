@@ -12,7 +12,7 @@
     "customConfigs": [],
     "designerId": "b0d3e520-d5c7-4c73-b1ea-2da743d61a6c",
     "$viewOrder": 0,
-    "expanded": true,
+    "expanded": false,
     "cn": [
         {
             "id": "ExtBox1-ext-gen8685",
@@ -24,6 +24,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "Title",
+                "type": "string",
                 "designer|userClassName": "MyField"
             },
             "customConfigs": [],
@@ -39,6 +40,7 @@
             "codeClass": null,
             "userConfig": {
                 "name": "Description",
+                "type": "string",
                 "designer|userClassName": "MyField1"
             },
             "customConfigs": [],
@@ -55,6 +57,7 @@
             "userConfig": {
                 "mapping": "@href",
                 "name": "Link",
+                "type": "string",
                 "designer|userClassName": "MyField2"
             },
             "customConfigs": [],
@@ -69,9 +72,144 @@
             },
             "codeClass": null,
             "userConfig": {
-                "mapping": "$13",
-                "name": "AppIcon",
+                "mapping": "IconURL",
+                "name": "IconURL",
+                "type": "string",
                 "designer|userClassName": "MyField3"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen30714",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "nInstalls",
+                "name": "Installs",
+                "type": "float",
+                "designer|userClassName": "MyField4"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen31564",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "Function",
+                "name": "Function",
+                "type": "string",
+                "designer|userClassName": "MyField5"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen32081",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "ID",
+                "name": "ID",
+                "type": "string",
+                "designer|userClassName": "MyField6"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen32552",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "nRating",
+                "name": "Rating",
+                "type": "float",
+                "designer|userClassName": "MyField7"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen33059",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "Tags",
+                "name": "Tags",
+                "type": "string",
+                "designer|userClassName": "MyField8"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen33532",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "EnableMessage",
+                "name": "EnableMessage",
+                "type": "boolean",
+                "designer|userClassName": "MyField9"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen34021",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "Message",
+                "name": "Message",
+                "type": "string",
+                "designer|userClassName": "MyField10"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen34793",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "IconBgClass",
+                "designer|userClassName": "MyField11"
             },
             "customConfigs": [],
             "expanded": true

@@ -27,6 +27,7 @@
       ["Olga","Communications"
       ],
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":2
   },
   {
@@ -40,6 +41,7 @@
       "@unid":"C1F08D32727BF9AD802579F30041806D",
       "@noteid":"90A",
       "@position":"2",
+      "@read":true,
       "@siblings":13,
       "@form":"frmAppInfo",
       "nRating":5,
@@ -56,6 +58,7 @@
       ["Packs","3d","Marketing"
       ],
       "Audience":"",
+      "IconBgClass":"icon_yellow",
       "nInstalls":7891
   },
   {
@@ -85,6 +88,7 @@
       ["News","Interact","Communications"
       ],
       "Audience":"",
+      "IconBgClass":"icon_blue",
       "nInstalls":397
   },
   {
@@ -116,6 +120,7 @@
       ["Communications","Marketing","News","Videos"
       ],
       "Audience":"",
+      "IconBgClass":"icon_blue",
       "nInstalls":12
   },
   {
@@ -145,6 +150,7 @@
       ["People","Search"
       ],
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":666
   },
   {
@@ -158,6 +164,7 @@
       "@unid":"69CAB2BADAA584BC802579F2005CDCE5",
       "@noteid":"8FE",
       "@position":"6",
+      "@read":true,
       "@siblings":13,
       "@form":"frmAppInfo",
       "nRating":2.7,
@@ -174,6 +181,7 @@
       ["News","Competitors"
       ],
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":2
   },
   {
@@ -203,6 +211,7 @@
       ["Apple","Test App"
       ],
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":1
   },
   {
@@ -232,6 +241,7 @@
       ["Android","Fake"
       ],
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":17
   },
   {
@@ -261,6 +271,7 @@
       ["BPR","Marketing","Communications"
       ],
       "Audience":"",
+      "IconBgClass":"icon_new",
       "nInstalls":5
   },
   {
@@ -290,6 +301,7 @@
       ["WTF","Acronyms","Glossary"
       ],
       "Audience":"",
+      "IconBgClass":"icon_yellow",
       "nInstalls":0
   }
 ]

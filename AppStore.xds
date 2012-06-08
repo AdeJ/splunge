@@ -62,6 +62,46 @@
                 "app/model/appSummary.js"
             ],
             "className": "appSummary"
+        },
+        "50d8cf58-dfcf-4625-81fc-13e84d4ce580": {
+            "paths": [
+                "metadata/store/appsByTag",
+                "app/store/override/appsByTag.js",
+                "app/store/appsByTag.js"
+            ],
+            "className": "appsByTag"
+        },
+        "9afd98c2-a233-4ab8-a55e-e7a7d19e832b": {
+            "paths": [
+                "metadata/store/appsByRating",
+                "app/store/override/appsByRating.js",
+                "app/store/appsByRating.js"
+            ],
+            "className": "appsByRating"
+        },
+        "ef0566c7-1d0f-40fd-8a3c-965d1996bf96": {
+            "paths": [
+                "metadata/store/appsByInstall",
+                "app/store/override/appsByInstall.js",
+                "app/store/appsByInstall.js"
+            ],
+            "className": "appsByInstall"
+        },
+        "25605dd1-69cb-4ceb-a6df-0e6d621e4779": {
+            "paths": [
+                "metadata/store/newsByDate",
+                "app/store/override/newsByDate.js",
+                "app/store/newsByDate.js"
+            ],
+            "className": "newsByDate"
+        },
+        "820c2425-55ce-4c5e-85d4-e631df60eb69": {
+            "paths": [
+                "metadata/model/newsSummary",
+                "app/model/override/newsSummary.js",
+                "app/model/newsSummary.js"
+            ],
+            "className": "newsSummary"
         }
     },
     "expandedState": {

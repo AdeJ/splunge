@@ -1,0 +1,53 @@
+{
+    "id": "ExtBox1-ext-gen35902",
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "newsSummary",
+        "storeId": "newsByDate",
+        "designer|userClassName": "newsByDate",
+        "designer|userAlias": "newsByDate"
+    },
+    "customConfigs": [],
+    "designerId": "25605dd1-69cb-4ceb-a6df-0e6d621e4779",
+    "$viewOrder": 4,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen35909",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "app/data/vwMobNewsByDate.json",
+                "designer|userClassName": "MyAjaxProxy4"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen35916",
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader4"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

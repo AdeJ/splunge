@@ -1,34 +1,29 @@
 
 {
-    "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_applist.nsf\/api\/data\/documents\/unid\/11364EC14EF3486C802579F2005CC8B0",
-    "@unid":"11364EC14EF3486C802579F2005CC8B0",
-    "@noteid":"906",
-    "@created":"2012-05-02T16:53:26Z",
-    "@modified":"2012-05-02T16:54:13Z",
+    "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/documents\/unid\/C1F08D32727BF9AD802579F30041806D",
+    "@unid":"C1F08D32727BF9AD802579F30041806D",
+    "@noteid":"90A",
+    "@created":"2012-05-03T11:55:27Z",
+    "@modified":"2012-06-08T12:07:29Z",
     "@authors":"CN=Adrian Jarman\/OU=London\/OU=GB\/O=BAT",
     "@form":"frmAppInfo",
-    "Title":"App-le",
-    "tmp_id":"AJAN-8TWMTF",
-    "ID":"AJAN-8TWMTF",
-    "Description":"Linked to test doc for offline test",
-    "Tags":"FRUITY",
+    "Title":"Packshot",
+    "tmp_id":"AJAN-8TXFZ8",
+    "ID":"AJAN-8TXFZ8",
+    "Description":"3d spinning packs for fast prototyping",
+    "Tags":
+    ["Packs","3d","Marketing"
+    ],
     "FileIcon72":
     {
         "type":"richtext",
-        "contentType":"text\/html",
-        "data":"<a class=\"domino-attachment-link\" style=\"display: inline-block; text-align: center\" href=\"http:\/\/10.176.247.68:80\/bat_mobile\/data_AppList.nsf\/0\/11364ec14ef3486c802579f2005cc8b0\/$FILE\/ico_apple_72.png\" title=\"ico_apple_72.png\"><img src=\"http:\/\/10.176.247.68:80\/bat_mobile\/data_AppList.nsf\/0\/11364ec14ef3486c802579f2005cc8b0\/FileIcon72\/0.CC?OpenElement&FieldElemFormat=gif\" width=\"107\" height=\"34\" alt=\"ico_apple_72.png\" border=\"0\" \/><span class=\"domino-caption\" style=\"display: block\">ico_apple_72.png<\/span><\/a>",
-        "attachments":
-        [
-          {
-              "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_AppList.nsf\/0\/11364ec14ef3486c802579f2005cc8b0\/$FILE\/ico_apple_72.png"
-          },
-          {
-              "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_AppList.nsf\/0\/11364ec14ef3486c802579f2005cc8b0\/FileIcon72\/0.CC?OpenElement&FieldElemFormat=gif"
-          }
-        ]
+        "contentType":"text\/html"
     },
-    "Function":"Fake",
-    "Version":1.01,
-    "VersionDate":"2012-05-02T16:53:27Z",
-    "EnableMessage":"false"
+    "IconBgClass":"icon_yellow",
+    "LaunchURL":"http:\/\/meap\/interact\/adrian\/packshot.nsf\/LaunchMenu.xsp",
+    "Function":"Marketing",
+    "VersionDate":"2012-05-03T11:55:27Z",
+    "EnableMessage":"false",
+    "nRating":5,
+    "nInstalls":7891
 }

@@ -11,6 +11,7 @@
       "@unid":"C1F08D32727BF9AD802579F30041806D",
       "@noteid":"90A",
       "@position":"1",
+      "@read":true,
       "@siblings":33,
       "@form":"frmAppInfo",
       "Tags":
@@ -27,6 +28,7 @@
       "Version":"",
       "nRating":5,
       "Audience":"",
+      "IconBgClass":"icon_yellow",
       "nInstalls":7891
   },
   {
@@ -56,6 +58,7 @@
       "Version":"",
       "nRating":0,
       "Audience":"",
+      "IconBgClass":"icon_yellow",
       "nInstalls":0
   },
   {
@@ -85,6 +88,7 @@
       "Version":"",
       "nRating":0,
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":17
   },
   {
@@ -114,6 +118,7 @@
       "Version":1.01,
       "nRating":1,
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":1
   },
   {
@@ -143,6 +148,7 @@
       "Version":"",
       "nRating":0,
       "Audience":"",
+      "IconBgClass":"icon_new",
       "nInstalls":5
   },
   {
@@ -172,6 +178,7 @@
       "Version":"",
       "nRating":0,
       "Audience":"",
+      "IconBgClass":"icon_new",
       "nInstalls":5
   },
   {
@@ -201,6 +208,7 @@
       "Version":"",
       "nRating":4.6,
       "Audience":"",
+      "IconBgClass":"icon_blue",
       "nInstalls":397
   },
   {
@@ -232,6 +240,7 @@
       "Version":"",
       "nRating":4,
       "Audience":"",
+      "IconBgClass":"icon_blue",
       "nInstalls":12
   },
   {
@@ -261,6 +270,7 @@
       "Version":"",
       "nRating":5,
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":2
   },
   {
@@ -274,6 +284,7 @@
       "@unid":"69CAB2BADAA584BC802579F2005CDCE5",
       "@noteid":"8FE",
       "@position":"10",
+      "@read":true,
       "@siblings":33,
       "@form":"frmAppInfo",
       "Tags":
@@ -290,6 +301,7 @@
       "Version":"",
       "nRating":2.7,
       "Audience":"",
+      "IconBgClass":"",
       "nInstalls":2
   }
 ]

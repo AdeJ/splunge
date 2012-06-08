@@ -34,12 +34,14 @@
 					linear,
 					left bottom,
 					left top,
-					color-stop(0.62, rgb(119,201,212)),
-					color-stop(0.44, rgb(71,148,207)),
-					color-stop(0.88, rgb(250,250,250))
+						color-stop(0.62, rgb(119,201,212)),
+						color-stop(0.44, rgb(71,148,207)),
+						color-stop(0.88, rgb(250,250,250))
 				);
             }
             
+	
+
             .bat_appstore_app_icon{
             	margin:15px;
             	height:72px;
@@ -57,6 +59,15 @@
 				);
             }
             
+					.icon_yellow{		background-image: -webkit-gradient(
+								linear,
+								left bottom,
+								left top,
+								color-stop(0.62, rgb(119,201,112)),
+								color-stop(0.44, rgb(71,148,107)),
+								color-stop(0.88, rgb(250,250,150))
+							);}
+
             .bat_appstore_app_detail{
         		margin-top:15px;
             	width:235px;

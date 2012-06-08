@@ -62,6 +62,17 @@ Ext.define('MyApp.view.MyContainer', {
                                                 text: 'BAT Tweets'
                                             }
                                         ]
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        handler: function(button, event) {
+                                            Ext.Msg.alert('BAT Appstore','This will return you to the main Appstore menu');
+                                        },
+                                        docked: 'left',
+                                        id: 'homeButton',
+                                        ui: 'action-round',
+                                        iconCls: 'batleaf',
+                                        iconMask: true
                                     }
                                 ]
                             },
@@ -125,13 +136,27 @@ Ext.define('MyApp.view.MyContainer', {
                                 xtype: 'titlebar',
                                 docked: 'top',
                                 ui: 'light',
-                                title: 'All'
+                                title: 'All',
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        handler: function(button, event) {
+                                            Ext.Msg.alert('Other menu options','The action sheet for choosing All apps... By Function.. By Tag etc.. will go here');
+                                        },
+                                        ui: 'action',
+                                        iconCls: 'more',
+                                        iconMask: true,
+                                        text: '',
+                                        align: 'right'
+                                    }
+                                ]
                             },
                             {
                                 xtype: 'list',
+                                id: 'AppsList',
                                 styleHtmlContent: true,
                                 itemTpl: [
-                                    '<div><div class="bat_appstore_app_icon"><img src="{AppIcon}"></div><h2>{Title}</h2><p>{Description}<br/>{Link}</p></div>'
+                                    '<div><div class="bat_appstore_app_icon {IconBgClass}"><img src="{IconURL}"></div><h2>{Title}</h2><p>{Description}<br/>{ID}<br/>{Link}</p></div>'
                                 ],
                                 store: 'appsByAlpha',
                                 grouped: true,
@@ -177,17 +202,7 @@ Ext.define('MyApp.view.MyContainer', {
                                 xtype: 'titlebar',
                                 docked: 'top',
                                 ui: 'light',
-                                title: 'Contact Us',
-                                items: [
-                                    {
-                                        xtype: 'button',
-                                        ui: 'action',
-                                        iconCls: 'more',
-                                        iconMask: true,
-                                        text: '',
-                                        align: 'right'
-                                    }
-                                ]
+                                title: 'Contact Us'
                             },
                             {
                                 xtype: 'panel',
@@ -197,11 +212,27 @@ Ext.define('MyApp.view.MyContainer', {
                                         centered: true,
                                         ui: 'action',
                                         width: '50%',
-                                        iconCls: 'arrow_up',
                                         iconMask: true,
                                         text: 'Send comments'
                                     }
                                 ]
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'container',
+                        layout: {
+                            type: 'card'
+                        },
+                        title: 'Temp News',
+                        iconCls: 'info',
+                        items: [
+                            {
+                                xtype: 'list',
+                                itemTpl: [
+                                    '<div><img src="{MainImagePath}">{Headline}<br/>{Category} - {Date}<br/>{Introduction}</div>'
+                                ],
+                                store: 'newsByDate'
                             }
                         ]
                     }
