@@ -27,7 +27,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "app/data/vwMobAppsByAlpha.json&amp;force",
+                "url": "app/data/vwMobAppsByAlpha.json",
                 "designer|userClassName": "MyAjaxProxy"
             },
             "customConfigs": [],

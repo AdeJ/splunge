@@ -1,7 +1,7 @@
 {
     "name": "AppStore",
     "settings": {
-        "urlPrefix": "http://192.168.0.7/touch/splunge",
+        "urlPrefix": "http://10.0.251.162/touch/splunge",
         "spacesToIndent": 4,
         "codeGenFormat": "Class",
         "exportPath": "C:/Documents and Settings/User/Desktop",
@@ -107,7 +107,7 @@
     "expandedState": {
         "data": true,
         "model": false,
-        "component": false,
+        "component": true,
         "controller": true,
         "resource": false
     }
