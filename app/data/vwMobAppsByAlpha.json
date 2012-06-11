@@ -1,11 +1,11 @@
 
 [
   {
-      "@href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/collections\/name\/vwMobAppsByAlpha\/unid\/11364EC14EF3486C802579F2005CC8B0",
+      "@href":"app/data/docApp.json",
       "@link":
       {
           "rel":"document",
-          "href":"http:\/\/10.176.247.68:80\/bat_mobile\/data_apps.nsf\/api\/data\/documents\/unid\/11364EC14EF3486C802579F2005CC8B0"
+          "href":"app/data/docApp.json"
       },
       "@entryid":"1-11364EC14EF3486C802579F2005CC8B0",
       "@unid":"11364EC14EF3486C802579F2005CC8B0",

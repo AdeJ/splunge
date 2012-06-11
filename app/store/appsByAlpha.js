@@ -25,7 +25,7 @@ Ext.define('MyApp.store.appsByAlpha', {
         storeId: 'appsByAlpha',
         proxy: {
             type: 'ajax',
-            url: 'app/data/vwMobAppsByAlpha.json',
+            url: 'app/data/vwMobAppsByAlpha.json&amp;force',
             reader: {
                 type: 'json'
             }
